@@ -166,3 +166,10 @@ footer{background:#fff;border-top:1px solid #edf0f5}.footer-inner{min-height:95p
 /* Keep real dashboard screenshot images crisp, without hover scaling. */
 .project .photo-cover:not(.lunch-cover) img{filter:none;transform:none!important;image-rendering:auto}
 .project:hover .photo-cover:not(.lunch-cover) img{transform:none!important}
+
+
+/* Mini SOC: 기존 실제 캡처에서 브라우저 탭과 주소창 상단 84px만 화면에서 제외 */
+.soc-screen-crop{position:relative;display:block;flex:0 1 auto;width:100%;aspect-ratio:1920 / 948;overflow:hidden;border-radius:9px;box-shadow:0 15px 24px rgba(21,52,92,.13);background:#f3f6fb}
+.soc-screen-crop img,
+.photo-cover .soc-screen-crop img{position:absolute!important;display:block!important;left:0!important;top:-8.86%!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:initial!important;filter:none!important;transform:none!important;transition:none!important;border-radius:0!important}
+.project:hover .soc-screen-crop img{transform:none!important}
