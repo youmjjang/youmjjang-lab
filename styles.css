@@ -104,3 +104,20 @@ footer{background:#fff;border-top:1px solid #edf0f5}.footer-inner{min-height:95p
 .footer-inner{min-height:105px;flex-wrap:wrap;justify-content:space-between;padding:22px 0}.footer-inner>span{order:3;width:100%}}
 @media(max-width:410px){.hero h1{font-size:32px}.eyebrow{font-size:9px}.btn{width:100%}.values{grid-template-columns:1fr}.values>div{padding-top:12px}.values h3{display:inline-block;margin:5px 12px}.values p{display:inline}.fake-content{grid-template-columns:72px 1fr}.fake-sidebar{padding:22px 6px;font-size:7px}.fake-main h4{font-size:15px}.fake-main{padding:16px 11px}.f1-chart{margin:17px 0 13px}.f1-chart>div{gap:5px}.f1-chart em{font-size:8px;width:39px}.filter{font-size:10px;padding:10px 12px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* 쉬엄쉬엄: 두 개의 실제 서비스 화면을 활용한 카드 */
+.lunch-cover{padding:30px 24px 35px;background:radial-gradient(circle at 20% 20%,#ffffffaa 0%,transparent 38%),linear-gradient(135deg,#dbf7ee,#e8f7f3 70%,#d5f1ef)}
+.lunch-shots{width:100%;display:flex;align-items:center;justify-content:center;gap:12px;min-width:0}
+.lunch-shot{margin:0;flex:0 1 45%;min-width:0;padding:8px;border:1px solid #ffffffb8;border-radius:22px;background:#ffffff9c;box-shadow:0 14px 28px #3a777a24;transition:transform .3s}
+.lunch-shot-a{transform:rotate(-6deg) translateY(9px)}
+.lunch-shot-b{transform:rotate(6deg) translateY(-6px)}
+.lunch-cover .lunch-shot img{display:block;width:100%;height:auto;max-height:275px;object-fit:contain;filter:none}
+.project:hover .lunch-shot-a,.project:hover .lunch-shot-a img{transform:rotate(-3deg) translateY(4px)}
+.project:hover .lunch-shot-b,.project:hover .lunch-shot-b img{transform:rotate(3deg) translateY(-4px)}
+@media(max-width:760px){
+ .lunch-cover{padding:20px 18px 30px}
+ .lunch-shots{gap:10px}
+ .lunch-shot{padding:6px;border-radius:15px;flex-basis:46%}
+ .lunch-cover .lunch-shot img{max-height:230px}
+}
