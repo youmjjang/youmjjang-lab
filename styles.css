@@ -162,3 +162,7 @@ footer{background:#fff;border-top:1px solid #edf0f5}.footer-inner{min-height:95p
   .lunch-cover{height:260px;min-height:260px;padding:16px 16px 24px}
   .lunch-shots{height:220px;gap:3px}
 }
+
+/* Keep real dashboard screenshot images crisp, without hover scaling. */
+.project .photo-cover:not(.lunch-cover) img{filter:none;transform:none!important;image-rendering:auto}
+.project:hover .photo-cover:not(.lunch-cover) img{transform:none!important}
