@@ -73,6 +73,3 @@
 @media(max-width:740px){.test-photos-grid{grid-template-columns:1fr}.test-photos{padding:14px}}
 
 
-/* Mini SOC 상세 페이지에서도 동일한 실제 캡처의 브라우저 영역을 가림 */
-.story-hero-figure .soc-screen-crop{width:100%;box-shadow:0 22px 45px #122a4330}
-.story-hero-figure .soc-screen-crop img{position:absolute!important;display:block!important;top:-8.86%!important;left:0!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:initial!important;border-radius:0!important;box-shadow:none!important;transform:none!important}
